@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title style="text-align: center!important;">Modal Page</ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">
+        <span ion-text color="primary" showWhen="ios">Cancel</span>
+        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card style="height: 100%!important;">
+    <ion-card-header style="text-align: center!important;">
+    </ion-card-header>
+    <ion-card-content style="text-align: center!important;">
+      <h2 padding><b> Top 3 Super Cars</b></h2>
+      <ion-list>
+        <ion-item *ngFor="let item of items">
+          {{item.title}}
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <p padding-left style="text-align: center!important;">Created By: <a href="https://github.com/MandaliyaPruthvi">Pruthvi
+        Mandaliya</a></p>
+  </ion-toolbar>
+</ion-footer>
