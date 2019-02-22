@@ -1,4 +1,4 @@
-# IonicModalExample
+# Ionic-ModalExample
 This repository contains basics of Modal Page used in Ionic - V3, with the simple example.
 
 To create new application use following command, 
